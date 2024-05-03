@@ -1,0 +1,39 @@
+body {
+    background-image: url(https://www.uleam.edu.ec/wp-content/uploads/2022/11/EZM_1396-1024x683.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    opacity: 95%;
+    background-color: #f9f9f9d7;
+    padding: 20px 45px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+input, select, button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

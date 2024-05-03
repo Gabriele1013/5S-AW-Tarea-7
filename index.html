@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro y Logueo de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    
+
+    <!--Registro de Usuario-->
+
+    <div class="container">
+        <h2>Registro de Usuario</h2>
+        <!--Campo de nombre-->
+        <input type="text" placeholder="Nombre completo" id="fullName">
+        <!--Campo de email-->
+        <input type="email" placeholder="Correo electrónico" id="email">
+        <!--Campo de contraseña-->
+        <input type="password" placeholder="Contraseña" id="password">
+        <!--Campo de confirmación de contraseña-->
+        <input type="password" placeholder="Confirmar contraseña" id="confirmPassword">
+        <!--Campo de elección de carrera graduada-->
+        <select id="career">
+            <option value="">Carrera o especialidad</option>
+            <option value="Agropecuaria">Agropecuaria</option>
+            <option value="Tecnologia de la Información">Tecnologia de la Información</option>
+            <option value="Otra">Otra</option>
+        </select>
+        <!--Campo de año de graduación-->
+        <input type="number" placeholder="Año de graduación" id="graduationYear">
+        <!--Botón de registro-->
+        <button onclick="registerUser()">Registrarse</button>
+        <!--Cambio de Registro a Logueo-->
+        <button onclick="switchForm('login')">Ir a Logueo</button>
+    </div>
+
+    <!--Logueo de Usuario-->
+
+    <div class="container" style="display: none;" id="loginContainer">
+        <h2>Logueo de Usuario</h2>
+        <!--Campo de email-->
+        <input type="email" placeholder="Correo electrónico" id="loginEmail">
+        <!--Campo de contraseña-->
+        <input type="password" placeholder="Contraseña" id="loginPassword">
+        <a href="#">¿Olvidaste tu contraseña?</a>
+        <!--Botón de logueo-->
+        <button onclick="loginUser()">Iniciar Sesión</button>
+        <!--Cambio de Logueo a Registro-->
+        <button onclick="switchForm('register')">Ir a Registro</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
