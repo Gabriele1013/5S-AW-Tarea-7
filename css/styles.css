@@ -11,8 +11,7 @@ body {
 }
 
 .container {
-    opacity: 95%;
-    background-color: #f9f9f9d7;
+    background-color: #ffffffd7;
     padding: 20px 45px;
     border-radius: 20px;
     margin: 10px;
@@ -27,7 +26,7 @@ input, select, button {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #935f23;
     border-radius: 20px;
     color: white;
     border: none;
@@ -35,5 +34,36 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    opacity: 0.9;
+}
+
+.small {
+    font-size: 0.8em; /* 2.5 veces más pequeño */
+    color: #ff0000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos CSS anteriores pueden ser reutilizados              res_users*/
+
+textarea {
+    height: 100px;
+}
+
+button {
+    margin-top: 10px;
 }
