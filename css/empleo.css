@@ -1,17 +1,18 @@
-/* Portada */
+/*1er empleo*/
 
-.article-container-cover{
+.work1-container-cover{
     width: 100%;
     height: 500px;
     position: relative;
     margin-top: 80px;
-    background-image: url(../images/uleam.jpeg);
+    background-image: url(../images/empleos/banco_pichincha1.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.article-container-cover:before{
+
+.work1-container-cover:before{
     content: '';
     width: 100%;
     height: 100%;
@@ -22,7 +23,7 @@
     opacity: 20%;
 }
 
-.container-info-cover{
+.ctn1-info-cover{
     max-width: 800px;
     height: 500px;
     margin: auto;
@@ -35,17 +36,63 @@
     z-index: 1;
 }
 
-.container-info-cover h1{
-    font-size: 60px;
+.ctn1-info-cover h1{
+    font-size: 80px;
     font-weight: 500;
-    color: #ffffff;
-    margin-bottom: 20px;
+    color: yellow;
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 yellow,
+        -2px  2px 0 #000,
+         2px  2px 0 yellow;
 }
 
-.container-info-cover p{
-    color: #fff;
-    font-size: 20px;
+/*2do empleo*/
+
+.work2-container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../images/empleos/pescimera2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.work2-container-cover:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #935f23;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 20%;
+}
+
+.ctn2-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.ctn2-info-cover h1{
+    font-size: 80px;
     font-weight: 500;
+    color: rgb(138, 208, 255);
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 rgb(138, 208, 255),
+        -2px  2px 0 #000,
+         2px  2px 0 rgb(138, 208, 255);
 }
 
 /* Container contenido del articulo */
@@ -92,11 +139,15 @@ article p{
 }
 
 article img{
-    width: 100%;
+    width: 400px;
     margin-top: 20px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
 }
 
-/* Aside de los empleos relacionados - menu */
+/* Aside de los empleos relacionados - empleo# */
 
 .container-aside aside{
     width: 300px;
@@ -105,18 +156,21 @@ article img{
     overflow: hidden;
     margin-left: 40px;
     margin-bottom: 40px;
-    padding-bottom: 20px;
     background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-aside aside img{
     width: 100%;
 }
 
-.container-aside aside h2,
-.container-aside aside p{
-    margin-top: 20px;
-    padding: 0px 20px;
+.container-aside aside h1{
+    text-align: center;
+    background: #935f23;
+    color: #fff;
 }
 
 .container-aside aside h2{
@@ -128,8 +182,6 @@ article img{
 }
 
 .container-aside aside button{
-    display: flex;
-    margin: 20px auto 0;
     padding: 10px 50px;
     font-size: 16px;
     background: #935f23;
@@ -137,10 +189,38 @@ article img{
     color: #fff;
     cursor: pointer;
     border-radius: 6px;
+    display: flex;
+    margin: 20px auto 0;
 }
 
 .container-aside aside button:hover{
     opacity: 0.9;
+}
+
+aside form{
+    padding: 20px;
+}
+
+aside label, 
+aside button{
+    display: flex;
+    flex-direction: column;
+}
+
+aside input{
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 2px 20px;
+}
+
+#comentario{
+    width: 200px;
+    height: 100px;
+}
+
+#estrellas{
+    border-radius: 6px;
+    width: 30px;
 }
 
 @media screen and (max-width: 1220px){
@@ -182,4 +262,9 @@ article img{
         right: 20px;
     }
     
+}
+
+/* clases rápidas */
+.p1{
+    padding: 20px;
 }

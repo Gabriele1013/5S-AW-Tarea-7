@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -11,10 +12,12 @@ body {
 }
 
 .container {
-    background-color: #ffffffd7;
+    margin-top: 600px;
+    margin-bottom: 100px;
+    background-color: #ffffff;
     padding: 20px 45px;
     border-radius: 20px;
-    margin: 10px;
+    box-shadow: 0 4px 25px -15px black;
 }
 
 input, select, button {
@@ -23,9 +26,13 @@ input, select, button {
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 6px;
 }
 
-button {
+
+
+.container button {
     background-color: #935f23;
     border-radius: 20px;
     color: white;
